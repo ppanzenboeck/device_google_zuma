@@ -46,6 +46,7 @@ PRODUCT_COPY_FILES += \
 # Set system properties identifying the chipset
 PRODUCT_VENDOR_PROPERTIES += ro.soc.manufacturer=Google
 TARGET_VENDOR_PROP += device/google/zuma/vendor.prop
+TARGET_SYSTEM_PROP := device/google/zuma/system.prop
 
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.vendor.testing_battery_profile=2
@@ -79,5 +80,3 @@ PRODUCT_PRODUCT_PROPERTIES += persist.arm64.memtag.app.com.google.android.blueto
 PRODUCT_PRODUCT_PROPERTIES += persist.arm64.memtag.app.com.android.nfc=off
 PRODUCT_PRODUCT_PROPERTIES += persist.arm64.memtag.system_server=off
 endif
-
-TARGET_SYSTEM_PROP := device/google/zuma/system.prop
