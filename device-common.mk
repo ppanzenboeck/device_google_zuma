@@ -14,6 +14,24 @@
 # limitations under the License.
 #
 
+# P.A.N.Z.
+DERP_BUILDTYPE=Official
+DERP_VERSION_APPEND_TIME_OF_DAY=true
+EXTRA_UDFPS_ICONS=true
+TARGET_NOT_USES_BLUR=true
+#TARGET_USES_PICO_GAPPS=true
+
+# Pixel Cam
+PRODUCT_PACKAGES += \
+	GoogleCamera
+
+# Remove Packages
+PRODUCT_PACKAGES += \
+	RemovePackages
+
+# ViPER4AndroidFX
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
 -include vendor/google_devices/zuma/proprietary/telephony/device-vendor.mk
 include device/google/zuma/device.mk
 
@@ -64,3 +82,5 @@ PRODUCT_PRODUCT_PROPERTIES += persist.arm64.memtag.app.com.google.android.blueto
 PRODUCT_PRODUCT_PROPERTIES += persist.arm64.memtag.app.com.android.nfc=off
 PRODUCT_PRODUCT_PROPERTIES += persist.arm64.memtag.system_server=off
 endif
+
+TARGET_SYSTEM_PROP := device/google/zuma/system.prop
