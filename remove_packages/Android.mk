@@ -46,19 +46,20 @@ more...
 
 #vendor/gms
 LOCAL_OVERRIDES_PACKAGES += \
-    SafetyHubPrebuilt \
-    CalculatorGooglePrebuilt \
-    CalendarGooglePrebuilt \
-    Chrome-Stub \
+    CalculatorGoogle \
+    CalendarGoogle \
+    Chrome64 \
     GoogleContacts \
-    PrebuiltGmail \
     Maps \
+    Gmail2 \
     talkback \
-    FilesPrebuilt \
-    ScribePrebuilt \
+    FilesGoogle \
+    YouTube \
+    Drive \
+    PersonalSafety \
     Accord \
-    GameSpace \
-    FossifyGallery
+    FossifyGallery \
+    com.google.android.apps.dialer.call_recording_audio.features
 
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
