@@ -21,6 +21,10 @@ EXTRA_UDFPS_ICONS=true
 TARGET_NOT_USES_BLUR=true
 #TARGET_USES_PICO_GAPPS=true
 
+# Quick Tap
+PRODUCT_PACKAGES += \
+	ColumbusService
+
 # Pixel Cam
 PRODUCT_PACKAGES += \
 	GoogleCamera
