@@ -70,3 +70,16 @@ PRODUCT_COPY_FILES += \
        device/google/zuma/conf/init.eng.memtag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.eng.memtag.rc
 endif
 endif
+
+DERPFEST_BUILD_TYPE := Official
+
+# RemovePackages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
+# Pixel Cam
+$(call inherit-product, vendor/google/camera/config.mk)
+
+# ViPER4AndroidFX is dead atm
+#$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
