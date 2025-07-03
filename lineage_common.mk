@@ -40,6 +40,10 @@ PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += \
 PRODUCT_PACKAGES += \
     GoogleParts
 
+# RemovePackages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Tethering
 PRODUCT_PACKAGES += \
     TetheringOverlay
