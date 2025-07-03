@@ -46,3 +46,15 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Trigger fsck on upgrade (305658663)
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.preventative_fsck = 1
+
+DERPFEST_BUILD_TYPE := Official
+
+# RemovePackages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
+# Pixel Cam
+$(call inherit-product, vendor/google/camera/config.mk)
+
+# ViPER4AndroidFX is dead atm
+#$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
