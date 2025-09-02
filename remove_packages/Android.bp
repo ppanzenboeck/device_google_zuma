@@ -14,7 +14,6 @@ android_app_import {
         "Gemini",
         "Gmail2",
         "talkback",
-        "FilesGoogle",
         "YouTube",
         "Drive",
         "FossifyGallery",
