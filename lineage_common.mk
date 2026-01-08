@@ -11,9 +11,6 @@ DEVICE_PACKAGE_OVERLAYS += device/google/zuma/overlay-lineage
 PRODUCT_COPY_FILES += \
     device/google/zuma/allowlist_com.google.android.as.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/allowlist_com.google.android.as.xml
 
-# BCR
-$(call inherit-product, vendor/bcr/bcr.mk)
-
 # Camera
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.vendor.camera.extensions.package=com.google.android.apps.camera.services \
